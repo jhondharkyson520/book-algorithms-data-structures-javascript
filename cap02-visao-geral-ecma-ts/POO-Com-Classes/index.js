@@ -1,4 +1,4 @@
-console.log("Hello word");
+console.log("Hello world");
 
 export class Book {
     constructor(title, pages, isbn) {
