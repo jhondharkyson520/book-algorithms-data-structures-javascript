@@ -63,3 +63,13 @@ console.log('Array com primeiro elemento removido atraves do prototype e logica'
 //Removendo da primeira posição com método shift() (sempre use o método shift())
 numbers.shift();
 console.log('Removendo da primeira posição com método shift(): ', numbers);
+
+//Método splice numbers.splice(0, 2)// primeiro elemento é o indice que se inicia a adição ou remoção
+// o segundo elemento É A QUANTIDADE de elementos a serem removidos por exemplo:
+numbers.splice(0, 2);
+console.log('Removendo indices: numbers.splice(0, 2); ', numbers);
+
+//támbem é possivel adicionar itens: numbers.splice(0,0, -2, -1)
+numbers.splice(0,0, -2, -1);
+console.log();
+console.log('adicionando indices: numbers.splice(0,0, -2, -1); ', numbers);
