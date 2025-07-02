@@ -28,3 +28,24 @@ console.log('Elementos true com filter: ', evenNumbers);
 //abaixo um exemplo para somar todos os elementos de um array:
 numbers.reduce((previous, current) => previous + current);
 console.log('A saída do método Reduce usado para somar o array é: ', numbers.reduce((previous, current) => previous + current));
+
+//For...of usado para iterar sobre os valores do array
+for(const n of numbers) {
+    console.log(n % 2 === 0 ? 'even' : 'odd');
+    
+}
+
+//usando método @@iterator
+let iterator = numbers[Symbol.iterator]();
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+
+//podemos também imprimir todos de uma vez:
+iterator = numbers[Symbol.iterator]();
+for(const n of iterator) {
+    console.log('for of iterator', n);    
+}
+
